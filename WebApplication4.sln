@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PJATK-APBD-Cw7-s34260", "PJATK-APBD-Cw7-s34260\PJATK-APBD-Cw7-s34260.csproj", "{2C6CD0A3-662B-42BC-A9C4-2C2CEB15531B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PJATK_APBD_Cw7_s34260", "PJATK_APBD_Cw7_s34260\PJATK_APBD_Cw7_s34260.csproj", "{2C6CD0A3-662B-42BC-A9C4-2C2CEB15531B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
