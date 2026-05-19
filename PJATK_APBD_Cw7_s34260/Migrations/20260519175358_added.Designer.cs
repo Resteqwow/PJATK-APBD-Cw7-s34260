@@ -12,8 +12,8 @@ using PJATK_APBD_Cw7_s34260.Infrastructure;
 namespace PJATK_APBD_Cw7_s34260.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20260518181535_addedModels")]
-    partial class addedModels
+    [Migration("20260519175358_added")]
+    partial class added
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -103,24 +103,6 @@ namespace PJATK_APBD_Cw7_s34260.Migrations
                     b.ToTable("Components");
                 });
 
-            modelBuilder.Entity("PJATK_APBD_Cw7_s34260.Models.PCComponents", b =>
-                {
-                    b.Property<int>("PCId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ComponentCode")
-                        .HasColumnType("char(10)");
-
-                    b.Property<int>("Amount")
-                        .HasColumnType("int");
-
-                    b.HasKey("PCId", "ComponentCode");
-
-                    b.HasIndex("ComponentCode");
-
-                    b.ToTable("PCComponents");
-                });
-
             modelBuilder.Entity("PJATK_APBD_Cw7_s34260.Models.PCs", b =>
                 {
                     b.Property<int>("Id")
@@ -151,6 +133,24 @@ namespace PJATK_APBD_Cw7_s34260.Migrations
                     b.ToTable("PCs");
                 });
 
+            modelBuilder.Entity("PJATK_APBD_Cw7_s34260.Models.PcComponents", b =>
+                {
+                    b.Property<int>("PCId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ComponentCode")
+                        .HasColumnType("char(10)");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.HasKey("PCId", "ComponentCode");
+
+                    b.HasIndex("ComponentCode");
+
+                    b.ToTable("PCComponents");
+                });
+
             modelBuilder.Entity("PJATK_APBD_Cw7_s34260.Models.Components", b =>
                 {
                     b.HasOne("PJATK_APBD_Cw7_s34260.Models.ComponentManufacturers", "ComponentManufacturers")
@@ -170,7 +170,7 @@ namespace PJATK_APBD_Cw7_s34260.Migrations
                     b.Navigation("ComponentTypes");
                 });
 
-            modelBuilder.Entity("PJATK_APBD_Cw7_s34260.Models.PCComponents", b =>
+            modelBuilder.Entity("PJATK_APBD_Cw7_s34260.Models.PcComponents", b =>
                 {
                     b.HasOne("PJATK_APBD_Cw7_s34260.Models.Components", "Components")
                         .WithMany("PCComponents")

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 namespace PJATK_APBD_Cw7_s34260.Models;
 
 [Table("PCComponents"), PrimaryKey(nameof(PCId), nameof(ComponentCode))]
-public class PCComponents
+public class PcComponents
 {
     public int PCId { get; set; }
  

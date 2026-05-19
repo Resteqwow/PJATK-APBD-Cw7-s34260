@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace PJATK_APBD_Cw7_s34260.Migrations
 {
     /// <inheritdoc />
-    public partial class addedModels : Migration
+    public partial class added : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

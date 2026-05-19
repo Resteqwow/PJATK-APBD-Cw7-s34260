@@ -16,5 +16,5 @@ public class PCs
     public DateTime CreatedAt { get; set; }
     public int Stock {get; set;}
 
-    public IEnumerable<PCComponents> PCComponents { get; set; } = [];
+    public IEnumerable<PcComponents> PCComponents { get; set; } = [];
 }
