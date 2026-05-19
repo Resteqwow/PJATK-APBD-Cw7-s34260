@@ -15,9 +15,9 @@ public class PcController(IPcService service) : ControllerBase
         return Ok(await service.GetAllAsync(cancellationToken));
     }
     [HttpGet("{id:int}")]
-    public async Task<IActionResult> GetById(int id)
+    public async Task<IActionResult> GetById(int id, CancellationToken cancellationToken)
     {
-        return Ok();
+        return Ok(await service.GetByIdAsync(id,cancellationToken));
     }
 
     [HttpPost]
